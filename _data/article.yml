@@ -11,32 +11,27 @@ authors:
     id: "zaminiqbal"
     name: "Zamin Iqbal"
     email: "zam@well.ox.ac.uk"
-    url: http://example.com/authors/1
     orcid: "0000-0001-8466-7547"
-
   - &RachelNorris
     id: "rachelnorris"
     name: "Rachel Norris"
     email: "rmnorris@well.ox.ac.uk"
     orcid: ""
-    
   - &HenkdenBakker
-  id: "henkdenbakker"
-  name: "Henk den Bakker"
-  email:"Henk.C.den-bakker@ttu.edu"
+    id: "henkdenbakker"
+    name: "Henk den Bakker"
+    email: "Henk.C.den-bakker@ttu.edu"
+  - &PhelimBradley
+    id: "phelimbradley"
+    name: "Phelim Bradley"
+    email: "phelim.bradley@well.ox.ac.uk"
+    orcid: "0000-0003-3967-3037"    
+  - &JenniferGardy
+    id: "jennifergardy"
+    name: "Jennifer Gardy"
+    email: "Jennifer.Gardy@bccdc.ca"
+    orcid: ""   
 
- - &PhelimBradley
-  id: "phelimbradley"
-  name: "Phelim Bradley"
-  email: "phelim.bradley@well.ox.ac.uk"
-  orcid:""
-
- - &JenniferGardy
-  id: "jennifergardy"
-  name: "Jennifer Gardy"
-  email: "Jennifer.Gardy@bccdc.ca"
-  orcid:""
-  
 affiliations:
   - name: "University of Oxford"
     department: "Wellcome Trust Centre for Genetics"
@@ -57,7 +52,7 @@ affiliations:
     department: "Centrefor Disease Control"
     location: "Vancouver"
     members:
-      - *JenniferGardy
+      - *JenniferGardy      
 
 funders:
   - name: "Medical Research Council"
@@ -65,12 +60,10 @@ funders:
     awards:
       - name: MRC123
         recipients:
-          - *alice-exemplar
-          - *bob-exemplar
       - name: MRC456
         recipients:
-          - *alice-exemplar
-          - *bob-exemplar
+      - *ZaminIqbal
+
 
   - name: "National Institutes of Health"
     url: http://www.nih.gov/
@@ -78,32 +71,30 @@ funders:
     awards:
       - name: NIH123
         recipients:
-          - *alice-exemplar
+      - *ZaminIqbal
 
 contributions:
   - name: "Methodology"
     url: http://dictionary.casrai.org/Contributor_Roles/Methodology
     contributors:
-      - *alice-exemplar
-      - *bob-exemplar
-
+  - *ZaminIqbal
   - name: "Investigation"
     url: http://dictionary.casrai.org/Contributor_Roles/Investigation
     contributors:
-      - *alice-exemplar
-      - *bob-exemplar
+  - *ZaminIqbal
 
   - name: "Software"
     url: http://dictionary.casrai.org/Contributor_Roles/Software
     contributors:
-      - *bob-exemplar
+  - *ZaminIqbal
 
   - name: "Writing - original draft"
     url: http://dictionary.casrai.org/Contributor_Roles/Writing_%E2%80%93_original_draft
     contributors:
-      - *alice-exemplar
+  - *ZaminIqbal
 
   - name: "Writing - review & editing"
     url: http://dictionary.casrai.org/Contributor_Roles/Writing_%E2%80%93_review_%26_editing
     contributors:
-      - *bob-exemplar
+  - *ZaminIqbal
+
