@@ -1,38 +1,63 @@
 # Note: to avoid repeating the same data multiple times,
 # identifiers (starting with "&") are referenced later (starting with "*")
 
-title: "My First Article"
+title: "Outbryk: Pan-genomic epidemiology with Cortex for ASM NGS conference"
 date: 2015-03-15T12:00:00Z
 doi: # e.g. 10.1234/example.1
 github: # e.g. user-name/paper-now
 
 authors:
-  - &alice-exemplar
-    id: "alice-exemplar"
-    name: "Alice Exemplar"
-    email: "alice.exemplar@example.com"
+  - &ZaminIqbal
+    id: "zaminiqbal"
+    name: "Zamin Iqbal"
+    email: "zam@well.ox.ac.uk"
     url: http://example.com/authors/1
-    orcid: "0000-0002-9298-3168"
+    orcid: "0000-0001-8466-7547"
 
-  - &bob-exemplar
-    id: "bob-exemplar"
-    name: "Bob Exemplar"
-    orcid: "0000-0002-9341-7985"
+  - &RachelNorris
+    id: "rachelnorris"
+    name: "Rachel Norris"
+    email: "rmnorris@well.ox.ac.uk"
+    orcid: ""
+    
+  - &HenkdenBakker
+  id: "henkdenbakker"
+  name: "Henk den Bakker"
+  email:"Henk.C.den-bakker@ttu.edu"
 
+ - &PhelimBradley
+  id: "phelimbradley"
+  name: "Phelim Bradley"
+  email: "phelim.bradley@well.ox.ac.uk"
+  orcid:""
+
+ - &JenniferGardy
+  id: "jennifergardy"
+  name: "Jennifer Gardy"
+  email: "Jennifer.Gardy@bccdc.ca"
+  orcid:""
+  
 affiliations:
-  - name: "Stanford University"
-    department: "Department of Mathematics"
-    location: "Stanford, California, USA"
-    url: http://mathematics.stanford.edu/
+  - name: "University of Oxford"
+    department: "Wellcome Trust Centre for Genetics"
+    location: "UK"
+    url: http://www.well.ox.ac.uk/
     members:
-      - *alice-exemplar
-      - *bob-exemplar
+      - *ZaminIqbal
+      - *RachelNorris
+      - *PhelimBradley
 
-  - name: "Harvard University"
+  - name: "Texas"
     department: "Department of Molecular and Cellular Biology"
     location: "Cambridge, MA, USA"
     members:
-      - *alice-exemplar
+      - *HenkDenBakker
+
+  - name: "UBC"
+    department: "Centrefor Disease Control"
+    location: "Vancouver"
+    members:
+      - *JenniferGardy
 
 funders:
   - name: "Medical Research Council"
