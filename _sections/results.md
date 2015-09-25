@@ -23,19 +23,8 @@ Answer: at the SNP level they agreed. We discuss below the question of whether p
 
 
 
-We ran the Cortex parallelised "independent workflow" with this single command:
+We ran the Cortex parallelised "independent workflow" first (commands documented at this GitHub repo)	
 
-perl run_indep_wkflow_with_gnu_par.pl  
-     --index INDEX 
-     --ref_fa L2624.fasta 
-     --dir_for_ref_objects ref/ 
-     --outdir results/ 
-     --kmer 31 
-     --mem_height 20 --mem_width 100
-     --procs 18 
-     --prefix LISTERIA
-     --vcftools_dir ~/apps/vcftools_0.1.13/ 
-     --stampy_bin /apps/stampy/1.0.24-py2.7/stampy.py 
 
 This spread the computation over 18 processors on a single Dell server, using a peak of 30 Gb of RAM. 
 Total elapsed compute time was ~2 days to go from fastq to final VCFs for all 4143 samples.
@@ -47,7 +36,7 @@ The length distribution of indels was:. Each sample had a mean of ? SNPs and ? i
 We then produced a restricted VCF file for building an initial phylogenetic tree using FastTree; restricting to biallelic SNPs which did not overlap with other events gave us ?? sites. We built 3 trees, based on discarding any site with >5% missing data, >15% missing data and >20% missing data. The trees looked consistent around the ASM samples (we did not evaluate them elsewhere) although of course with some loss of resolution in the 20% tree. However it was clear from this that we could not restrict our analysis to a set of 144? samples, including ?? from ? and ?? clinical (PNUSAS) samples.
 
 
-![Full tree listria](https://github.com/iqbal-lab/ASM_NGS_conf_report/blob/gh-pages/_figures/list_tree_indep.tiff)
+![Figure 1](Fig1)
 
 The joint analysis pipeline ran in ? RAM ? time, and found ?
 We found ?, tree looked like ?, did indels resolve any otherwise identical samples? Phages?
