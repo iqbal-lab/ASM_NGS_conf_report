@@ -41,11 +41,12 @@ We then produced a restricted VCF file for building an initial phylogenetic tree
 
 The joint analysis pipeline ran in ? RAM ? time, and found ?
 We found ?, tree looked like ?, did indels resolve any otherwise identical samples? Phages?
+Some specific example(s) where indel//phage provided better resolution, if such exist
 
 
 
 ------
-Answering the challenge questions
+Answering the challenge questions - ALL OF THIS NEEDS TO BE UPDATED BASED ON THE JOINT TREE
 ------
 
 "Do the product isolates from facility #1 match the environmental swabs from facility #1?"
@@ -71,6 +72,46 @@ We did used phylogenetic placement, based on the SNPs called between these sampl
 
 
 
+
+-----
+ Salmonella full analysis on ? samples 
+----
+
+We ran the full pipeline on ? samples (ids here xxxx)
+We found X SNPs, Y indels, Z complex, W phased SNPs
+Initial tree looked like this
+
+
+
+What do we see? I'm going to enter below what I see on Rahcel's big tree (missingness 5%)
+, but really should only do this on based on joint analysis
+
+ - ASM31 now matches an enviromental isolate ASM14, plus a lagre number of PNUSAS clinical samples. Comparing at the indel and phage level.....
+
+ - ASM48 matches a PNUSAS000470
+
+ Can we resolve the Henk-ASMplus cluster of ASM27.28.35.36.43,47
+ ie
+ SRR2352211, SRR2352212, SRR2352219, SRR2352220, SRR2352227, SRR2352231
+well, the first 3 still together
+ie
+ SRR2352211, SRR2352212, SRR2352219
+
+ASM47 matches a PNUSAS
+
+WE seem to be missing ASM51 = SRR2352235 from Rachel's tree
+
+
+
+
+
+
+
+
+***************
+***************
+
+Not for final version but keeping this analysis as could be useful
 
 
 ------
@@ -124,42 +165,6 @@ Yes, clusters:
 ASM41,ASM42
 ASM44,ASM45
 ASM29,32,30  - also match enviro swabs from site2 state2 (ASM7 and 13)
-
-
------
- Salmonella full analysis on ? samples 
-----
-
-We ran the full pipeline on ? samples (ids here xxxx)
-We found X SNPs, Y indels, Z complex, W phased SNPs
-Initial tree looked like this
-
-
-
-What do we see? I'm going to enter below what I see on Rahcel's big tree (missingness 5%)
-, but really should only do this on based on joint analysis
-
- - ASM31 now matches an enviromental isolate ASM14, plus a lagre number of PNUSAS clinical samples. Comparing at the indel and phage level.....
-
- - ASM48 matches a PNUSAS000470
-
- Can we resolve the Henk-ASMplus cluster of ASM27.28.35.36.43,47
- ie
- SRR2352211, SRR2352212, SRR2352219, SRR2352220, SRR2352227, SRR2352231
-well, the first 3 still together
-ie
- SRR2352211, SRR2352212, SRR2352219
-
-ASM47 matches a PNUSAS
-
-WE seem to be missing ASM51 = SRR2352235 from Rachel's tree
-
-
-
-
-
-
-
 
 
 
