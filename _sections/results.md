@@ -7,37 +7,35 @@ order: 4
 Listeria: basic questions purely using challenge samples
 ----
 
-We ran the Outbryk pipeline on the 18 Listeria samples, starting with reference genome ??. Using ? cores it took ? minutes to go from fastq to final VCFs for the Cortex independent workflow. We found ? SNPs, ? clean indels, ? clusters of phased SNPs, and  complex clusters of SNPs and indels - these latter two might be candidates for recombination events. 
+We ran the Outbryk pipeline on the 18 Listeria samples using reference genome J2_064. Using 18 cores it took ? minutes to go from fastq to final VCFs for the Cortex independent workflow. We found ? SNPs, ? clean indels, ? clusters of phased SNPs, and  complex clusters of SNPs and indels - these latter two might be candidates for recombination events. 
 
-We were immediately able to answer the first question of the challenge
+As a result we were immediately able to answer the first question of the challenge
 
 *Do the product isolates from facility #1 match the environmental swabs from the same facility?*
-Answer: at the SNP level they agreed. Indel analysis showed??? Phage analysis showed?
-
+Answer: at the SNP level they agreed. We discuss below the question of whether phage presence or indels provide further information.
 
 -------
-Listeria - running the Outbryk pipeline on 18 ASM samples plus ?1900 background samples:
+Listeria - running the Outbryk pipeline on 18 ASM samples plus 4143 background samples
 -------
 
 
+We ran the Cortex parallelised "independent workflow" with this single command:
 
-We ran the Cortex parallelised "independent workflow" (meaning each sample is independently compared against reference genome XXXX to discover variation) with this single command:
+perl run_indep_wkflow_with_gnu_par.pl  --index INDEX --ref_fa L2624.fasta --dir_for_ref_objects ref/ --vcftools_dir ~/apps/vcftools_0.1.13/ --outdir results/ --stampy_bin /apps/stampy/1.0.24-py2.7/stampy.py --kmer 31 --mem_height 20 --mem_width 100 --procs 18 --prefix LISTERIA
 
-perl ...
-
-This spreads the computation over ?20 processors on a single Dell? server, using a peak of ??Gb of RAM. (Note: we could have configured this to use less RAM, without reducing performance, *except* that for a small number of extremely high coverage samples, Cortex would have failed gracefully and asked for more memory to be allocated. To reduce time taken, since we had a 1Tb RAM server, we opted to allocate much more than we needed).
-Total elapsed compute time was ? to go from fastq for ??? samples to a set of VCF files (all at identical sites, so first 9 columns of all these VCF files were identical)/
+This spread the computation over 18 processors on a single Dell server, using a peak of 30 Gb of RAM. 
+Total elapsed compute time was ~2 days to go from fastq to final VCFs for all 4143 samples.
 
 This resulted in ??? SNP, ? indel, and ?? clustered, phased SNP and indel calls.
 The length distribution of indels was:
 
-Each sample had a mean of ? SNPs and ? indels.  [Is there a length of transposon or something of interest in Listeria?]. The min/mean/max number of confident heterozygous calls was ?/?/?
+Each sample had a mean of ? SNPs and ? indels. The min/mean/max number of confident heterozygous calls was ?/?/?
 
 
 We then produced a restricted VCF file for building an initial phylogenetic tree using FastTree; restricting to biallelic SNPs which did not overlap with other events gave us ?? sites. We built 3 trees, based on discarding any site with >5% missing data, >15% missing data and >20% missing data. The trees looked consistent around the ASM samples (we did not evaluate them elsewhere) although of course with some loss of resolution in the 20% tree. However it was clear from this that we could not restrict our analysis to a set of 144? samples, including ?? from ? and ?? clinical (PNUSAS) samples.
 
 
-[Insert tree with our samples highlighted]
+![_figures/list_tree_indep.tiff]
 
 The joint analysis pipeline ran in ? RAM ? time, and found ?
 We found ?, tree looked like ?, did indels resolve any otherwise identical samples? Phages?
