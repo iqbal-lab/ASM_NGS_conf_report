@@ -23,7 +23,7 @@ Answer: at the SNP level they agreed. We discuss below the question of whether p
 
 
 
-We ran the Cortex parallelised "independent workflow" first (commands documented at this GitHub repo)	
+We ran the Cortex parallelised "independent workflow" first (one command-line instruction documented at this GitHub repo)	
 
 
 This spread the computation over 18 processors on a single Dell server, using a peak of 30 Gb of RAM. 
@@ -37,7 +37,11 @@ We then produced a restricted VCF file for building an initial phylogenetic tree
 
 [Figure 1](#figure-1)
 
-The joint analysis pipeline ran in ? RAM ? time, and found ?
+We used this tree to identify a set of 141 samples (including the 18 challenge samples), and ran the MASH tool to determine the best reference genome to use, and then used the Cortex joint analysis pipeline to get the best possible set of variant calls for this cluster. This step ran in ? RAM ? time, and found ?. We then ran FastTree again on the full set of SNP calls from this callset (excluding clusters of phased SNPs which are likely recombination events). This is the tree:
+
+[Figure 2](#figure-2)
+
+
 We found ?, tree looked like ?, did indels resolve any otherwise identical samples? Phages?
 Some specific example(s) where indel//phage provided better resolution, if such exist
 
