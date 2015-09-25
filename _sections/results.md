@@ -14,9 +14,9 @@ As a result we were immediately able to answer the first question of the challen
 *Do the product isolates from facility #1 match the environmental swabs from the same facility?*
 Answer: at the SNP level they agreed. We discuss below the question of whether phage presence or indels provide further information.
 
--------
-#subtitle: Listeria - running the Outbryk pipeline on 18 ASM samples plus 4143 background samples
--------
+
+### Listeria - running the Outbryk pipeline on 18 ASM samples plus 4143 background samples
+
 
 
 We ran the Cortex parallelised "independent workflow" with this single command:
