@@ -3,9 +3,9 @@ title: "Results"
 order: 4
 ---
 
-----
-## Listeria: basic questions purely using challenge samples
-----
+
+### Listeria: basic questions purely using challenge samples
+
 
 We ran the Outbryk pipeline on the 18 Listeria samples using reference genome J2_064. Using 18 cores it took ? minutes to go from fastq to final VCFs for the Cortex independent workflow. We found ? SNPs, ? clean indels, ? clusters of phased SNPs, and  complex clusters of SNPs and indels - these latter two might be candidates for recombination events. 
 
