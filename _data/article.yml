@@ -16,10 +16,12 @@ authors:
     id: "rachelnorris"
     name: "Rachel Norris"
     email: "rmnorris@well.ox.ac.uk"
+    orcid: ""
   - &HenkdenBakker
     id: "henkdenbakker"
     name: "Henk den Bakker"
     email: "Henk.C.den-bakker@ttu.edu"
+    orcid: ""
   - &PhelimBradley
     id: "phelimbradley"
     name: "Phelim Bradley"
@@ -29,6 +31,7 @@ authors:
     id: "jennifergardy"
     name: "Jennifer Gardy"
     email: "Jennifer.Gardy@bccdc.ca"
+    orcid: ""
 
 
 affiliations:
@@ -44,12 +47,14 @@ affiliations:
   - name: "Texas Tech University"
     department: "Department of Animal and Food Sciences"
     location: "Lubbock,TX 79409, USA"
+    url: ""
     members:
       - *HenkdenBakker
 
   - name: "UBC"
     department: "Centrefor Disease Control"
     location: "Vancouver"
+    url: ""
     members:
       - *JenniferGardy      
 
