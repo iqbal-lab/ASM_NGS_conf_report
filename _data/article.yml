@@ -16,7 +16,6 @@ authors:
     id: "rachelnorris"
     name: "Rachel Norris"
     email: "rmnorris@well.ox.ac.uk"
-    orcid: ""
   - &HenkdenBakker
     id: "henkdenbakker"
     name: "Henk den Bakker"
@@ -30,7 +29,7 @@ authors:
     id: "jennifergardy"
     name: "Jennifer Gardy"
     email: "Jennifer.Gardy@bccdc.ca"
-    orcid: ""   
+
 
 affiliations:
   - name: "University of Oxford"
@@ -42,9 +41,9 @@ affiliations:
       - *RachelNorris
       - *PhelimBradley
 
-  - name: "Texas"
-    department: "Department of Molecular and Cellular Biology"
-    location: "Cambridge, MA, USA"
+  - name: "Texas Tech University"
+    department: "Department of Animal and Food Sciences"
+    location: "Lubbock,TX 79409, USA"
     members:
       - *HenkDenBakker
 
@@ -54,24 +53,6 @@ affiliations:
     members:
       - *JenniferGardy      
 
-funders:
-  - name: "Medical Research Council"
-    sameAs: "http://doi.org/10.13039/501100000265"
-    awards:
-      - name: MRC123
-        recipients:
-      - name: MRC456
-        recipients:
-      - *ZaminIqbal
-
-
-  - name: "National Institutes of Health"
-    url: http://www.nih.gov/
-    sameAs: "http://doi.org/10.13039/100000002"
-    awards:
-      - name: NIH123
-        recipients:
-      - *ZaminIqbal
 
 contributions:
   - name: "Methodology"
@@ -81,12 +62,12 @@ contributions:
   - name: "Investigation"
     url: http://dictionary.casrai.org/Contributor_Roles/Investigation
     contributors:
-  - *ZaminIqbal
+  - *Rachel Norris, Henk Den Bakker, ZaminIqbal
 
   - name: "Software"
     url: http://dictionary.casrai.org/Contributor_Roles/Software
     contributors:
-  - *ZaminIqbal
+  - *ZaminIqbal, Rachel Norris, Phelim Bradley, Henk Den Bakker
 
   - name: "Writing - original draft"
     url: http://dictionary.casrai.org/Contributor_Roles/Writing_%E2%80%93_original_draft
@@ -96,5 +77,5 @@ contributions:
   - name: "Writing - review & editing"
     url: http://dictionary.casrai.org/Contributor_Roles/Writing_%E2%80%93_review_%26_editing
     contributors:
-  - *ZaminIqbal
+  - *ZaminIqbal, Henk den Bakker
 
