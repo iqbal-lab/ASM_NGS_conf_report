@@ -15,7 +15,7 @@ We ran the Outbryk pipeline on the 18 Listeria samples using reference genome J2
 As a result we were immediately able to answer the first question of the challenge: "Do the product isolates from facility #1 match the environmental swabs from the same facility?". Answer: at the SNP level they agreed. We discuss below the question of whether phage presence or indels provide further information.
 
 
-### Listeria - Outbryk on 18 ASM samples plus 4143 background samples
+### Listeria - Outbryk on 18 ASM samples plus 1740 background samples
 
 
 
@@ -29,11 +29,11 @@ This resulted in ??? SNP, ? indel, and ?? clustered, phased SNP and indel calls.
 The length distribution of indels was:. Each sample had a mean of ? SNPs and ? indels. The min/mean/max number of confident heterozygous calls was ?/?/?
 
 
-We then produced a restricted VCF file for building an initial phylogenetic tree using FastTree; restricting to biallelic SNPs which did not overlap with other events gave us ?? sites. We built 3 trees, based on discarding any site with >5% missing data, >15% missing data and >20% missing data. The trees looked consistent around the ASM samples (we did not evaluate them elsewhere) although of course with some loss of resolution in the 20% tree. However it was clear from this that we could not restrict our analysis to a set of 144? samples, including ?? from ? and ?? clinical (PNUSAS) samples.
+We then produced a restricted VCF file for building an initial phylogenetic tree using FastTree; restricting to biallelic SNPs which did not overlap with other events gave us ?? sites. We built 3 trees, based on discarding any site with >5% missing data, >15% missing data and >20% missing data. The trees looked consistent around the ASM samples (we did not evaluate them elsewhere) although of course with some loss of resolution in the 20% tree. However it was clear from this that we could not restrict our analysis to a set of 144 samples.
 
 [Figure 1](#figure-1)
 
-We used this tree to identify a set of 141 samples (including the 18 challenge samples), and ran the MASH tool to determine the best reference genome to use, and then used the Cortex joint analysis pipeline to get the best possible set of variant calls for this cluster. This step ran in ? RAM ? time, and found ?. We then ran FastTree again on the full set of SNP calls from this callset (excluding clusters of phased SNPs which are likely recombination events). This is the tree:
+We used this tree to identify a set of 141 samples (including the 18 challenge samples), and ran the MASH tool to determine the best reference genome to use, and then used the Cortex joint analysis pipeline to get the best possible set of variant calls for this cluster. This step ran in 12 minutes, and found 819 SNPs, 32 indels, 25 complex variants, and 277 clusters of phased SNPs (perhaps recombination events). We then ran FastTree again on the full set of SNP calls from this callset (excluding clusters of phased SNPs which are likely recombination events). This is the tree:
 
 [Figure 2](#figure-2)
 
@@ -48,7 +48,7 @@ This heatmap is clustered automatically, and shows clearly how certain samples (
 
 [Figure 4](#figure-4)
 
-and  indels (no figure here, nothing to see). Looking at the clusters in turn:
+and indels (no figure here, nothing to see). Looking at the clusters in turn:
 
 
 
@@ -126,7 +126,9 @@ No.
 We ran the full pipeline on 2602 samples. This took 26 hours to call variants independently on each sample, and then another 15 hour to go back and genotype all samples at the non-redundant union of those callsets.
 
 We found 272,380 SNPs, 31,665 indels, 37544 complex variants (mostly clusters of SNPs and indels), and 330039 clusters of phased SNPs that are often putative recombination events.
-Initial tree looked like this
+
+Initial tree looked like this:
+
 
 
 
