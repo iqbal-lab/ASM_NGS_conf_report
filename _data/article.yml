@@ -88,5 +88,5 @@ contributions:
     url: http://dictionary.casrai.org/Contributor_Roles/Writing_%E2%80%93_review_%26_editing
     contributors:
       - *ZaminIqbal
-        *HenkdenBakker
+      -  *HenkdenBakker
 
