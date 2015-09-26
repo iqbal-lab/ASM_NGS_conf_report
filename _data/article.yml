@@ -63,24 +63,30 @@ contributions:
   - name: "Methodology"
     url: http://dictionary.casrai.org/Contributor_Roles/Methodology
     contributors:
-  - *ZaminIqbal
+     - *ZaminIqbal
   - name: "Investigation"
     url: http://dictionary.casrai.org/Contributor_Roles/Investigation
     contributors:
-  - *RachelNorris, HenkdenBakker, ZaminIqbal
+      - *RachelNorris
+      - *HenkdenBakker, 
+      - *ZaminIqbal
 
   - name: "Software"
     url: http://dictionary.casrai.org/Contributor_Roles/Software
     contributors:
-  - *ZaminIqbal, RachelNorris, PhelimBradley, HenkdenBakker
+      - *ZaminIqbal
+      - *RachelNorris
+      - *PhelimBradley
+      - *HenkdenBakker
 
   - name: "Writing - original draft"
     url: http://dictionary.casrai.org/Contributor_Roles/Writing_%E2%80%93_original_draft
     contributors:
-  - *ZaminIqbal
+      - *ZaminIqbal
 
   - name: "Writing - review & editing"
     url: http://dictionary.casrai.org/Contributor_Roles/Writing_%E2%80%93_review_%26_editing
     contributors:
-  - *ZaminIqbal, HenkdenBakker
+      - *ZaminIqbal
+        *HenkdenBakker
 
