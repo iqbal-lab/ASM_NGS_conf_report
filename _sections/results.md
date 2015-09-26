@@ -53,7 +53,7 @@ and indels (no figure here, nothing to see). Looking at the clusters in turn:
 
 
 ---
-# Facility 2 cluster:
+** Facility 2 cluster **:
 
 The two facility two samples (SRR2352236, SRR2352235) cluster closely with CFSAN007567 and CFSAN007549 in the tree. However, their phage profiles are significantly different, with SRR2352235 SRR2352236 clustering together based on their phage profile. See
 
@@ -65,9 +65,8 @@ There are no INDELs seperating these samples, but there is 1 indel present in th
 
 
 
----------
-Facility 1 cluster:
----------
+---
+** Facility 1 cluster **:
 
 We observed a cluster consisting of the Facility 1 samples and a number of CFSAN samples (CFSAN010069, CFSAN010071, CFSAN010073,CFSAN010074,CFSAN010075, CFSAN010077, CFSAN010089,CFSAN010090, CFSAN010092, CFSAN010093, CFSAN010094, CFSAN010097, CFSAN010098, CFSAN010973, CFSAN011017), all identical at the SNP level. These samples all broadly agreed in phage profile also, with 
 a few exceptions: SRR2352237 looks different from all other samples, but this sample had only 16x depth of coverage and should perhaps have been excluded. CFSAN011017 and CFSAN011015 have very similar phage profiles which are distinct from all the other isolates in the clade.
@@ -76,9 +75,9 @@ a few exceptions: SRR2352237 looks different from all other samples, but this sa
 [Figure 6](#figure-6)
 
 
----------
-Mobilome/accessory genome comparison
----------
+---
+** Mobilome/accessory genome comparison **
+
 
 By working with a joint assembly graph of all samples, we are able very simply to pull out a presence/absence heatmap of contigs across samples. See
 
@@ -96,9 +95,8 @@ where each row is a sample (with the SNP phylogeny shown on the right) and each 
 
 
 
-------
-Answering the challenge questions 
-------
+---
+## Answering the challenge questions 
 
 "Do the product isolates from facility #1 match the environmental swabs from facility #1?"
 
