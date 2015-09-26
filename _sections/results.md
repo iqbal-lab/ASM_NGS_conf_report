@@ -23,10 +23,9 @@ We ran the Cortex parallelised "independent workflow" first (one command-line in
 
 
 This spread the computation over 18 processors on a single Dell server, using a peak of 30 Gb of RAM. 
-Total elapsed compute time was ~2 days to go from fastq to final VCFs for all 4143 samples.
+Total elapsed compute time was ~2 days to go from fastq to final VCFs for all 1758 samples.
+This resulted in 180220 SNP, 5620 indel, 62108 complex variants and 480095 clustered/phased SNPs.
 
-This resulted in ??? SNP, ? indel, and ?? clustered, phased SNP and indel calls.
-The length distribution of indels was:. Each sample had a mean of ? SNPs and ? indels. The min/mean/max number of confident heterozygous calls was ?/?/?
 
 
 We then produced a restricted VCF file for building an initial phylogenetic tree using FastTree; restricting to biallelic SNPs which did not overlap with other events gave us ?? sites. We built 3 trees, based on discarding any site with >5% missing data, >15% missing data and >20% missing data. The trees looked consistent around the ASM samples (we did not evaluate them elsewhere) although of course with some loss of resolution in the 20% tree. However it was clear from this that we could not restrict our analysis to a set of 144 samples.
