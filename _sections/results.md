@@ -147,7 +147,7 @@ Two of the 4 clinical isolates in the challenge dataset  were epidemiologially l
 The other 2 of the 4 were in the upper clade. ASM26 (clinical) was 0 SNPs away from ASM25 (food, traceback to eggs from state 2). ASM31 (clinical, traced back to eggs from state 2) was 0 SNPs from 3 samples fron environmental swabs in state 2, site 2 (ASM7,13,17).
 
 
-"Do any of the remaining 19 clinical isolates match clinical isolates from question #1?"
+"Do any of the remaining 19 clinical isolates match clinical isolates from questi #1?"
 Yes: all of the following "matches" were 0 SNPs apart: 
 1. ASM26 matched clinical samples ASM37,38,39.
 2. ASM31 matched clinical samples ASM29,30,32
@@ -161,6 +161,16 @@ No
 "Are there additional clinical clusters"
 Yes, see above.
 
+
+
+
+---
+Phage analysis example
+
+In general we found close agreement in phage profile between samples that were phylogenetically close. However, we did notice one interesting example. Clinical sample ASM_31 was found to be closely related to PNUSAS000339, differing by 2 confident SNPs (coord:1927955, A/G, coverages 40,0 for one sample and 0,69 on the other, and coord:2650779, T/G, with coverages 16,0 on one sample and 0,90 on the other) and one confident indel (coord:721390, TC/T, with coverages 25,0 on one sample and 0,55 on the other). Thus from a pure core-genome analysis one would think they were identical. However we did find noticeable differences in their phage profiles.
+
+
+[Figure 11](#figure-11)
 
 
 
