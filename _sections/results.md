@@ -42,9 +42,34 @@ We used this tree to identify a set of 141 samples (including the 18 challenge s
 [Figure 2](#figure-2)
 
 
-The tree revealed a number of clusters, which we then analysed individually. The single sample which is a clear outlier is SRR2352342 (ASM58) which is sequenced to much lower depth (20x) than all the others. This revealed to us that we were allowing too low confidence SNP calls to contribute to our tree; Outbryk is newly developed and not yet production-worthy. One of the interesting issues raised by this challenge is the difficulty of scaling efficiently while maintaining an good statistical model when dealing with growing volumes of heterogeneous data (our full Listeria set included old and new Illumina data, high and low coverages, and also some 454 data).
+The tree revealed a number of clusters, which we then analysed individually. The single sample which is a clear outlier is SRR2352342 (ASM58) which is sequenced to much lower depth (20x) than all the others. This revealed to us that we were allowing too low confidence SNP calls to contribute to our tree; given the time constraints (we spent several days downloading ~6000 samples from the SRA and converting from their format), we have not been able to rerun yet. One of the interesting issues raised by this challenge is the difficulty of scaling efficiently while maintaining an good statistical model when dealing with growing volumes of heterogeneous data (our full Listeria set included old and new Illumina data, high and low coverages, and also some 454 data).
 
-Our pipeline takes human-specified clusters and automatically analyses them in terms of shared sequence (contigs), known genes and/or phages, and indels. Looking at the clusters in turn:
+Our pipeline takes human-specified clusters and automatically analyses them in terms of phages:
+
+[Figure 3](#figure-3)
+
+shared sequence
+
+[Figure 4](#figure-4)
+
+ and  indels (no figure here, nothing to see). Looking at the clusters in turn:
+
+
+
+---------
+Facility 2 cluster:
+---------
+The two facility two samples (SRR2352236, SRR2352235) cluster closelt with CFSAN007567 and CFSAN007549 in the tree. However, their phage profilsa are significantly different, with SRR2352235 SRR2352236 clustering together based on their phage profile. There are no INDELs seperating these samples.
+
+
+---------
+Facility 1 cluster:
+---------
+
+
+
+
+
 
 
 
