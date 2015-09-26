@@ -10,25 +10,25 @@ Just to give a flavour of what one might first do when we pick up a new dataset.
 ### Listeria: basic questions purely using challenge samples
 
 
-We ran the Outbryk pipeline on the 18 Listeria samples using reference genome J2_064. Using 18 cores it took ? minutes to go from fastq to final VCFs for the Cortex independent workflow. We found ? SNPs, ? clean indels, ? clusters of phased SNPs, and  complex clusters of SNPs and indels - these latter two might be candidates for recombination events. 
-
-As a result we were immediately able to answer the first question of the challenge: "Do the product isolates from facility #1 match the environmental swabs from the same facility?". Answer: at the SNP level they agreed. We discuss below the question of whether phage presence or indels provide further information.
+We ran the Outbryk pipeline on the 18 Listeria samples using reference genome J2_064. Using 18 cores it took ? minutes to go from fastq to final VCFs for the Cortex independent workflow. As a result we were immediately able to answer the first question of the challenge: "Do the product isolates from facility #1 match the environmental swabs from the same facility?". Answer: at the SNP level they agreed. We discuss below the question of whether phage presence or indels provide further information.
 
 
-### Listeria - Outbryk on 18 ASM samples plus 1740 background samples
+### Listeria - Outbryk on 18 ASM samples plus 4159 background samples
 
 
 
 We ran the Cortex parallelised "independent workflow" first (one command-line instruction documented at this GitHub repo)	
-
+on the 18 ASM samples, plus more than 4000 background samples.
 
 This spread the computation over 18 processors on a single Dell server, using a peak of 30 Gb of RAM. 
-Total elapsed compute time was ~2 days to go from fastq to final VCFs for all 1758 samples.
+Total elapsed compute time was ~2 days to go from fastq to final VCFs for all 4159 samples.
 This resulted in 180220 SNP, 5620 indel, 62108 complex variants and 480095 clustered/phased SNPs.
 
 
 
-We then produced a restricted VCF file for building an initial phylogenetic tree using FastTree; restricting to biallelic SNPs which did not overlap with other events gave us ?? sites. We built 3 trees, based on discarding any site with >5% missing data, >15% missing data and >20% missing data. The trees looked consistent around the ASM samples (we did not evaluate them elsewhere) although of course with some loss of resolution in the 20% tree. However it was clear from this that we could not restrict our analysis to a set of 144 samples.
+We then produced a restricted VCF file for building an initial phylogenetic tree using FastTree; restricting to biallelic SNPs which did not overlap with other events gave us ?? sites. We then went back and genotyped 1700 samples at these sites (we would have done the whole set, but were concerned about running out of time for the challenge. Looking back we could have done them all)
+
+ We built 3 trees, based on discarding any site with >5% missing data, >15% missing data and >20% missing data. The trees looked consistent around the ASM samples (we did not evaluate them elsewhere) although of course with some loss of resolution in the 20% tree. However it was clear from this that we could restrict our analysis to a set of 144 samples.
 
 [Figure 1](#figure-1)
 
