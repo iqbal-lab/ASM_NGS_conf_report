@@ -52,9 +52,9 @@ and indels (no figure here, nothing to see). Looking at the clusters in turn:
 
 
 
----------
-Facility 2 cluster:
----------
+---
+# Facility 2 cluster:
+
 The two facility two samples (SRR2352236, SRR2352235) cluster closely with CFSAN007567 and CFSAN007549 in the tree. However, their phage profiles are significantly different, with SRR2352235 SRR2352236 clustering together based on their phage profile. See
 
 
