@@ -86,8 +86,11 @@ where each row is a sample (with the SNP phylogeny shown on the right) and each 
  This shows two things.
 
  1. The two facility 2 samples (top two rows) have some contigs which are absent from all the other samples (yellow block, top left). On BLAST-ing these we find evidence that these are phage-related mobile elements (we have not had time to examine all of these contigs yet). Some examples:
+
  ..* an adenine specific methylase, N12 class, involved in replication, recombination and repair
+ 
  ..* phage/plasmid primase, P4 family, C-terminal domain
+ 
  
  2. Sample SRR2352237 is an outlier here too, with a number of contigs seen in it alone.
 
