@@ -10,7 +10,7 @@ Just to give a flavour of what one might first do when we pick up a new dataset.
 ### Listeria: basic questions purely using challenge samples
 
 
-We ran the Outbryk pipeline on the 18 Listeria samples using reference genome J2_064. Using 18 cores it took ? minutes to go from fastq to final VCFs for the Cortex independent workflow. As a result we were immediately able to answer the first question of the challenge: "Do the product isolates from facility #1 match the environmental swabs from the same facility?". Answer: at the SNP level they agreed. We discuss below the question of whether phage presence or indels provide further information.
+We ran the Outbryk pipeline on the 18 Listeria samples using reference genome J2_064. Using 18 cores it took 16 minutes to go from fastq to final VCFs for the Cortex independent workflow. As a result we were immediately able to answer the first question of the challenge: "Do the product isolates from facility #1 match the environmental swabs from the same facility?". Answer: at the SNP level they agreed. We discuss below the question of whether phage presence or indels provide further information.
 
 
 ### Listeria - Outbryk on 18 ASM samples plus 4159 background samples
