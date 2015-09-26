@@ -68,7 +68,7 @@ contributions:
     url: http://dictionary.casrai.org/Contributor_Roles/Investigation
     contributors:
       - *RachelNorris
-      - *HenkdenBakker, 
+      - *HenkdenBakker 
       - *ZaminIqbal
 
   - name: "Software"
