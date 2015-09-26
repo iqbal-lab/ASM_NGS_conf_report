@@ -128,90 +128,40 @@ We found 272,380 SNPs, 31,665 indels, 37544 complex variants (mostly clusters of
 Initial tree looked like this:
 
 
+[Figure 8](#figure-8)
 
 
-What do we see? I'm going to enter below what I see on Rahcel's big tree (missingness 5%)
-, but really should only do this on based on joint analysis
-
- - ASM31 now matches an enviromental isolate ASM14, plus a lagre number of PNUSAS clinical samples. Comparing at the indel and phage level.....
-
- - ASM48 matches a PNUSAS000470
-
- Can we resolve the Henk-ASMplus cluster of ASM27.28.35.36.43,47
- ie
- SRR2352211, SRR2352212, SRR2352219, SRR2352220, SRR2352227, SRR2352231
-well, the first 3 still together
-ie
- SRR2352211, SRR2352212, SRR2352219
-
-ASM47 matches a PNUSAS
-
-WE seem to be missing ASM51 = SRR2352235 from Rachel's tree
+We used this to split the samples into two sets, along with background samples that were closely related. For each cluster, we used MASH to choose a closer reference genome, and then use the Cortex joint workflow to find segregating variants within these two clusters. We called these (arbitrarily) the "upper" and "lower" clades and analysed them separately. 
 
 
+We found 1294 SNPs, 67 indels, 2 complex variants and 94 sets of clustered+phased SNPs in the lower clade,
+and X in the upper clade. Trees of these clades are here:
 
 
+[Figure 9](#figure-9)
+
+[Figure 10](#figure-10)
 
 
+Two of the 4 clinical isolates in the challenge dataset  were epidemiologially linked to eggs from state 3 were in the lower clade (ASM_49,ASM_50). ASM_49 was 1 SNP away from ASM_6 (chicken feed, state 2, site 1), ASM9, ASM10 and ASM11 (environmental swabs from state 2, site 1),  ASM15 (env swab, state2, site 3), ASM16 (env swab, state 2, site 4). ASM_50 was also 1 SNP away from all of those except ASM16.
+The other 2 of the 4 were in the upper clade. ASM26 (clinical) was 0 SNPs away from ASM25 (food, traceback to eggs from state 2). ASM31 (clinical, traced back to eggs from state 2) was 0 SNPs from 3 samples fron environmental swabs in state 2, site 2 (ASM7,13,17).
 
 
-***************
-***************
+"Do any of the remaining 19 clinical isolates match clinical isolates from question #1?"
+Yes: all of the following "matches" were 0 SNPs apart: 
+1. ASM26 matched clinical samples ASM37,38,39.
+2. ASM31 matched clinical samples ASM29,30,32
+3. ASM49 matched clinical samples ASM46,47,48,50
+4. ASM50 matched clinical samples ASM46.47,48,49
 
-Not for final version but keeping this analysis as could be useful
-
-
-------
-Salmonella  - basic analysis based on 50 ASM samples plus ?? NY
-------
-
-One (small) initial step in proving the robustness of a bioinformatic pipeline is that it can be used easily by many people, so one of us (den Bakker) therefore ran Outbryk on his servers in Texas. We added ? samples from ? to the 50 samples provided by the ASM for this challenge, because xxxx.
-
-The initial tree from the independent all-sample workflow looked like this:
+"Do they match any of the food or environmental isolates?"
+No
 
 
-[ASM_plus_thr5_annotated]
-
-This immediately allows us to answer some questions:
-
-"Do the 4 clinical isolates (ASM_26, ASM_31, ASM_49, and ASM_50) that are epidemiologically linked to eggs from state #2 match any of the environmental or food swabs collected at those facilities?"
+"Are there additional clinical clusters"
+Yes, see above.
 
 
-ASM26 is a clinical sample from a person known to have consumed food with ASM40 (data provided as part of the challenge) from state 2. We found it was a close match to several other clinical samples (ASM37,38,39), to ASM25, from food traced back to eggs from  state 2.
-The closest environmental samples we found were ASM19 (state1, site1, ?? SNPs away), and ASM14/21 from state2-site3 and state1-site1 respectively.
-
-
-ASM31 (clinical, traced back to eggs from state 2) was a close match to NY56657565 from ????, but to none of the other ASM samples
-
-ASM49 (clinical, tracedback to eggs from state 2) was a close match (quantify) to clinical samples ASM4,48 and environmental swab ASM19 from state 1-site1, and to chicken-feed sample ASM06, from state2-site1.
-
-ASM50 (clinical tracedback to eggs from state 2) was almost identical to a number of samples from state 2 (ASM10,11) AND from state 1(ASM23,04). This close genetic relatedness across that wide geography either suggests a lack of resolution, or transmission (or both)
-
-
-Looking beyind SNPs at these samples, we want to know:
-
- - Can we separate state1 and state2 genetically?
- - can we find other samples which cluster with this b lig "ASM-only" cluster
-
-
-"Do any of the remaining 19 clinical isolates match clinical isolates from question #1? Do they match any of the food or environmental isolates?" 
-
-
-Yes  ASM26 --> ASM37,38,39
-
-No for ASM31
-
-Yes ASM49 - matches ASM46,48
-
-ASM50 very close to ASM27,28,35,36,,43,47
-
-
-"Are there additional clinical clusters?"
-
-Yes, clusters:
-ASM41,ASM42
-ASM44,ASM45
-ASM29,32,30  - also match enviro swabs from site2 state2 (ASM7 and 13)
 
 
 
