@@ -1,6 +1,6 @@
 ---
 title: "Discussion"
-order: 5
+order: 4
 ---
 Discussion of the results and implications.
 

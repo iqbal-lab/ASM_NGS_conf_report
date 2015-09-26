@@ -1,6 +1,6 @@
 ---
 title: Acknowledgments
-order: 6
+order: 5
 container: footer
 ---
 Our gratitude belongs to these people.
