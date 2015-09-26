@@ -131,11 +131,11 @@ Initial tree looked like this:
 [Figure 8](#figure-8)
 
 
-We used this to split the samples into two sets, along with background samples that were closely related. For each cluster, we used MASH to choose a closer reference genome, and then use the Cortex joint workflow to find segregating variants within these two clusters. We called these (arbitrarily) the "upper" and "lower" clades and analysed them separately. 
+We used this to split the samples into two sets, along with background samples that were closely related. For each cluster, we used MASH to choose a closer reference genome, and then use the Cortex joint workflow to find segregating variants within these two clusters. We called these (arbitrarily) the "upper" and "lower" groups and analysed them separately. 
 
 
-We found 1294 SNPs, 67 indels, 2 complex variants and 94 sets of clustered+phased SNPs in the lower clade,
-and X in the upper clade. Trees of these clades are here:
+We found 1294 SNPs, 67 indels, 2 complex variants and 94 sets of clustered+phased SNPs in the lower group,
+and X in the upper group. Trees of these groups are here: https://github.com/iqbal-lab/ASM_NGS_conf_report/tree/gh-pages/data/salmonella/trees, and we display them in the following figures
 
 
 [Figure 9](#figure-9)
@@ -143,8 +143,8 @@ and X in the upper clade. Trees of these clades are here:
 [Figure 10](#figure-10)
 
 
-Two of the 4 clinical isolates in the challenge dataset  were epidemiologially linked to eggs from state 3 were in the lower clade (ASM_49,ASM_50). ASM_49 was 1 SNP away from ASM_6 (chicken feed, state 2, site 1), ASM9, ASM10 and ASM11 (environmental swabs from state 2, site 1),  ASM15 (env swab, state2, site 3), ASM16 (env swab, state 2, site 4). ASM_50 was also 1 SNP away from all of those except ASM16.
-The other 2 of the 4 were in the upper clade. ASM26 (clinical) was 0 SNPs away from ASM25 (food, traceback to eggs from state 2). ASM31 (clinical, traced back to eggs from state 2) was 0 SNPs from 3 samples fron environmental swabs in state 2, site 2 (ASM7,13,17).
+Two of the 4 clinical isolates in the challenge dataset  were epidemiologially linked to eggs from state 3 were in the lower group (ASM_49,ASM_50). ASM_49 was 1 SNP away from ASM_6 (chicken feed, state 2, site 1), ASM9, ASM10 and ASM11 (environmental swabs from state 2, site 1),  ASM15 (env swab, state2, site 3), ASM16 (env swab, state 2, site 4). ASM_50 was also 1 SNP away from all of those except ASM16.
+The other 2 of the 4 were in the upper group. ASM26 (clinical) was 0 SNPs away from ASM25 (food, traceback to eggs from state 2). ASM31 (clinical, traced back to eggs from state 2) was 0 SNPs from 3 samples fron environmental swabs in state 2, site 2 (ASM7,13,17).
 
 
 "Do any of the remaining 19 clinical isolates match clinical isolates from questi #1?"
