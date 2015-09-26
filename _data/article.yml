@@ -45,7 +45,7 @@ affiliations:
     department: "Department of Animal and Food Sciences"
     location: "Lubbock,TX 79409, USA"
     members:
-      - *HenkDenBakker
+      - *HenkdenBakker
 
   - name: "UBC"
     department: "Centrefor Disease Control"
