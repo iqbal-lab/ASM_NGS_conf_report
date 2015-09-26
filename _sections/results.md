@@ -44,11 +44,11 @@ We used this tree to identify a set of 141 samples (including the 18 challenge s
 
 The tree revealed a number of clusters, which we then analysed individually. The single sample which is a clear outlier is SRR2352342 (ASM58) which is sequenced to much lower depth (20x) than all the others. This revealed to us that we were allowing too low confidence SNP calls to contribute to our tree; given the time constraints (we spent several days downloading ~6000 samples from the SRA and converting from their format), we have not been able to rerun yet. One of the interesting issues raised by this challenge is the difficulty of scaling efficiently while maintaining an good statistical model when dealing with growing volumes of heterogeneous data (our full Listeria set included old and new Illumina data, high and low coverages, and also some 454 data).
 
-Our pipeline takes human-specified clusters and automatically analyses them in terms of phages:
+Our pipeline takes manually-specified clusters and automatically analyses them in terms of phage presence/absence:
 
 [Figure 3](#figure-3)
 
-shared sequence
+This heatmap is clustered automatically, and shows clearly how certain samples (columns) group together in terms of phage content(phages are rows). The pipeline also takes a multi-sample de Bruijn graph and compares contig (so-called "unitigs" for the experts) presence across samples:
 
 [Figure 4](#figure-4)
 
@@ -59,55 +59,75 @@ and  indels (no figure here, nothing to see). Looking at the clusters in turn:
 ---------
 Facility 2 cluster:
 ---------
-The two facility two samples (SRR2352236, SRR2352235) cluster closelt with CFSAN007567 and CFSAN007549 in the tree. However, their phage profilsa are significantly different, with SRR2352235 SRR2352236 clustering together based on their phage profile. There are no INDELs seperating these samples.
+The two facility two samples (SRR2352236, SRR2352235) cluster closely with CFSAN007567 and CFSAN007549 in the tree. However, their phage profiles are significantly different, with SRR2352235 SRR2352236 clustering together based on their phage profile. See
+
+
+[Figure 5](#figure-5)
+
+There are no INDELs seperating these samples, but there is 1 indel present in the Facility 2 samples which is absent from all the facility 1 samples.
+
+
 
 
 ---------
 Facility 1 cluster:
 ---------
 
+We observed a cluster consisting of the Facility 1 samples and a number of CFSAN samples (CFSAN010069, CFSAN010071, CFSAN010073,CFSAN010074,CFSAN010075, CFSAN010077, CFSAN010089,CFSAN010090, CFSAN010092, CFSAN010093, CFSAN010094, CFSAN010097, CFSAN010098, CFSAN010973, CFSAN011017), all identical at the SNP level. These samples all broadly agreed in phage profile also, with 
+a few exceptions: SRR2352237 looks different from all other samples, but this sample had only 16x depth of coverage and should perhaps have been excluded. CFSAN011017 and CFSAN011015 have very similar phage profiles which are distinct from all the other isolates in the clade.
 
 
+[Figure 6](#figure-6)
 
 
+---------
+Mobilome/accessory genome comparison
+---------
 
+By working with a joint assembly graph of all samples, we are able very simply to pull out a presence/absence heatmap of contigs across samples. See
+
+[Figure 7](#figure-7)
+
+where each row is a sample (with the SNP phylogeny shown on the right) and each column is a contig >500bp long.
+ This shows two things.
+
+ 1. The two facility 2 samples (top two rows) have some contigs which are absent from all the other samples (yellow block, top left). On BLAST-ing these we find evidence that these are phage-related mobile elements (we have not had time to examine all of these contigs yet). Some examples:
+ ..* an adenine specific methylase, N12 class, involved in replication, recombination and repair
+ ..* phage/plasmid primase, P4 family, C-terminal domain
+ 
+ 2. Sample SRR2352237 is an outlier here too, with a number of contigs seen in it alone.
 
 
 
 
 ------
-Answering the challenge questions - ALL OF THIS NEEDS TO BE UPDATED BASED ON THE JOINT TREE
+Answering the challenge questions 
 ------
 
 "Do the product isolates from facility #1 match the environmental swabs from facility #1?"
 
-
-ASM53/SRR2352237 seems to be slightly isolated from the indep-tree - what does joint analysis show?
-ASM54/SRR2352238 is extremely similar to the environmental isolates from that facility (specifically xxxxx)
-
+Yes.
 
 "At facility #1, the manufacturer claims that since the positive swabs did not come from food contact surfaces the contamination must come from another source. Do the product isolates match any other food/environmental isolates currently in the NCBI/SRA database under BioProjects PRJNA212117 or PRJNA215355?"
 
-We did used phylogenetic placement, based on the SNPs called between these samples, to rapidly test all the BioProjects samples from PRJNA212117 and PRJNA215355. We found ????
-
+Yes, the CFSAN samples mentioned and shown above.
 
 
 "Do the environmental/product isolates from either facility match clinical isolates in the BioProjects listed in question 1, or any other clinical Listeria monocytogenes isolates available from other public data sources?"
 
-
+Yes, as above.
 
 "Can you identify the clinical cases associated with this contamination event?"
 
-???
+No.
 
 
 
 
------
- Salmonella full analysis on ? samples 
-----
 
-We ran the full pipeline on ? samples (ids here xxxx)
+### Salmonella full analysis on 2602 samples 
+
+We ran the full pipeline on 2602 samples. 
 We found X SNPs, Y indels, Z complex, W phased SNPs
 Initial tree looked like this
 
