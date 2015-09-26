@@ -42,8 +42,11 @@ We used this tree to identify a set of 141 samples (including the 18 challenge s
 [Figure 2](#figure-2)
 
 
-We found ?, tree looked like ?, did indels resolve any otherwise identical samples? Phages?
-Some specific example(s) where indel//phage provided better resolution, if such exist
+The tree revealed a number of clusters, which we then analysed individually. The single sample which is a clear outlier is SRR2352342 (ASM58) which is sequenced to much lower depth (20x) than all the others. This revealed to us that we were allowing too low confidence SNP calls to contribute to our tree; Outbryk is newly developed and not yet production-worthy. One of the interesting issues raised by this challenge is the difficulty of scaling efficiently while maintaining an good statistical model when dealing with growing volumes of heterogeneous data (our full Listeria set included old and new Illumina data, high and low coverages, and also some 454 data).
+
+Our pipeline takes human-specified clusters and automatically analyses them in terms of shared sequence (contigs), known genes and/or phages, and indels. Looking at the clusters in turn:
+
+
 
 
 
