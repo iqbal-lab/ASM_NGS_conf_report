@@ -52,7 +52,7 @@ shared sequence
 
 [Figure 4](#figure-4)
 
- and  indels (no figure here, nothing to see). Looking at the clusters in turn:
+and  indels (no figure here, nothing to see). Looking at the clusters in turn:
 
 
 
