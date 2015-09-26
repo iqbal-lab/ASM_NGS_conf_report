@@ -12,11 +12,7 @@ Just to give a flavour of what one might first do when we pick up a new dataset.
 
 We ran the Outbryk pipeline on the 18 Listeria samples using reference genome J2_064. Using 18 cores it took ? minutes to go from fastq to final VCFs for the Cortex independent workflow. We found ? SNPs, ? clean indels, ? clusters of phased SNPs, and  complex clusters of SNPs and indels - these latter two might be candidates for recombination events. 
 
-As a result we were immediately able to answer the first question of the challenge
-
-*Do the product isolates from facility #1 match the environmental swabs from the same facility?*
-
-Answer: at the SNP level they agreed. We discuss below the question of whether phage presence or indels provide further information.
+As a result we were immediately able to answer the first question of the challenge: "Do the product isolates from facility #1 match the environmental swabs from the same facility?". Answer: at the SNP level they agreed. We discuss below the question of whether phage presence or indels provide further information.
 
 
 ### Listeria - Outbryk on 18 ASM samples plus 4143 background samples
@@ -127,8 +123,9 @@ No.
 
 ### Salmonella full analysis on 2602 samples 
 
-We ran the full pipeline on 2602 samples. 
-We found X SNPs, Y indels, Z complex, W phased SNPs
+We ran the full pipeline on 2602 samples. This took 26 hours to call variants independently on each sample, and then another 15 hour to go back and genotype all samples at the non-redundant union of those callsets.
+
+We found 272,380 SNPs, 31,665 indels, 37544 complex variants (mostly clusters of SNPs and indels), and 330039 clusters of phased SNPs that are often putative recombination events.
 Initial tree looked like this
 
 
