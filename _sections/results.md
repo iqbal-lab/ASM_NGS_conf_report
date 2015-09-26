@@ -129,8 +129,11 @@ We found 272,380 SNPs, 31,665 indels, 37544 complex variants (mostly clusters of
 
 Initial tree looked like this:
 
-
 [Figure 8](#figure-8)
+
+and the actual tree we built is here
+
+https://github.com/iqbal-lab/ASM_NGS_conf_report/blob/gh-pages/data/salmonella/trees/SALMONELLA_ASM.combined.vcf.filtered_missing.conf_thresh5.missingness_thresh0.05.treea2
 
 
 We used this to split the samples into two sets, along with background samples that were closely related. For each cluster, we used MASH to choose a closer reference genome, and then use the Cortex joint workflow to find segregating variants within these two clusters. We called these (arbitrarily) the "upper" and "lower" groups and analysed them separately. 
@@ -141,6 +144,7 @@ and X in the upper group. Trees of these groups are here: https://github.com/iqb
 
 
 [Figure 9](#figure-9)
+
 
 [Figure 10](#figure-10)
 
