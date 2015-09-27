@@ -147,9 +147,9 @@ and X in the upper group. Trees of these groups are here: [salmonella final tree
 [Figure 10](#figure-10)
 
 
-Two of the 4 clinical isolates in the challenge dataset  were epidemiologially linked to eggs from state 3 were in the lower group (ASM_49,ASM_50). 
+Two of the 4 clinical isolates in the challenge dataset  were epidemiologially linked to eggs from state 3 were in the lower group (ASM_49,ASM_50). ASM_49 was 1 SNP away from 
 
-* ASM_49 was 1 SNP away from ASM_6 (chicken feed, state 2, site 1)
+* ASM_6 (chicken feed, state 2, site 1)
 * ASM9, ASM10 and ASM11 (environmental swabs from state 2, site 1)
 * ASM15 (env swab, state2, site 3)
 * ASM16 (env swab, state 2, site 4). 
@@ -157,8 +157,12 @@ Two of the 4 clinical isolates in the challenge dataset  were epidemiologially l
 
 The other 2 of the 4 were in the upper group. 
 
-* ASM26 (clinical) was 0 SNPs away from ASM25 (food, traceback to eggs from state 2). 
-* ASM31 (clinical, traced back to eggs from state 2) was 0 SNPs from 3 samples fron environmental swabs in state 2, site 2 (ASM7,13,17).
+ASM26 (clinical) was 0 SNPs away from 
+
+* ASM25 (food, traceback to eggs from state 2). 
+
+ASM31 (clinical, traced back to eggs from state 2) was 0 SNPs from 
+* 3 samples fron environmental swabs in state 2, site 2 (ASM7,13,17).
 
 
 _"Do any of the remaining 19 clinical isolates match clinical isolates from question #1?"_
