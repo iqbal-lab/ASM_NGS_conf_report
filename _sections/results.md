@@ -109,7 +109,7 @@ Yes, the CFSAN samples mentioned and shown above.
 
 _Do the environmental/product isolates from either facility match clinical isolates in the BioProjects listed in question 1, or any other clinical Listeria monocytogenes isolates available from other public data sources?_
 
-Yes, as above.
+We found various CFSAN matches, as above, but we do not believe they are clinical.
 
 _Can you identify the clinical cases associated with this contamination event?_
 
@@ -121,7 +121,7 @@ No.
 
 ### Salmonella full analysis on 2602 samples 
 
-We ran the full pipeline on 2602 samples. This took 26 hours to call variants independently on each sample, and then another 15 hour to go back and genotype all samples at the non-redundant union of those callsets.
+We ran the full pipeline on 2602 samples. This took 26 hours to call variants independently on each sample, and then another 15 hours to go back and genotype all samples at the non-redundant union of those callsets.
 
 We found 272,380 SNPs, 31,665 indels, 37544 complex variants (mostly clusters of SNPs and indels), and 330039 clusters of phased SNPs that are often putative recombination events.
 
