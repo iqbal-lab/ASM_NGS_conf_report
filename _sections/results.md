@@ -138,7 +138,7 @@ We used this initial tree to split the samples into two sets, along with backgro
 
 
 We found 1294 SNPs, 67 indels, 2 complex variants and 94 sets of clustered+phased SNPs in the lower group,
-and X in the upper group. Trees of these groups are here: https://github.com/iqbal-lab/ASM_NGS_conf_report/tree/gh-pages/data/salmonella/trees, and we display them in the following figures
+and X in the upper group. Trees of these groups are here: [salmonella final trees for upper/lower groups](https://github.com/iqbal-lab/ASM_NGS_conf_report/tree/gh-pages/data/salmonella/trees), and we display them in the following figures
 
 
 [Figure 9](#figure-9)
