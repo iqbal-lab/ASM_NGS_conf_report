@@ -1,2 +1,2 @@
-* First Author, Second Author. 2014. [My First Article](https://example.com/articles/1).
-* First Author, Second Author. 2015. [My Second Article](https://example.com/articles/2).
+* Iqbal et al., 2014. [De novo assembly and genotyping of variants using coloured de Bruijn graphs](http://www.nature.com/ng/journal/v44/n2/full/ng.1028.html).
+* Wang et al., 2015. [It is not all about SNPs: Comparison of mobile genetic elements and deletions in Listeria monocytogenes genomes links cases of hospital-acquired listeriosis to the environmental source.](http://www.ncbi.nlm.nih.gov/pubmed/26311854).
