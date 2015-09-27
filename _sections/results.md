@@ -162,17 +162,21 @@ The other 2 of the 4 were in the upper group.
 
 
 _"Do any of the remaining 19 clinical isolates match clinical isolates from question #1?"_
+
 Yes: all of the following "matches" were 0 SNPs apart: 
-1. ASM26 matched clinical samples ASM37,38,39.
-2. ASM31 matched clinical samples ASM29,30,32
-3. ASM49 matched clinical samples ASM46,47,48,50
-4. ASM50 matched clinical samples ASM46.47,48,49
+
+* ASM26 matched clinical samples ASM37,38,39.
+* ASM31 matched clinical samples ASM29,30,32
+* ASM49 matched clinical samples ASM46,47,48,50
+* ASM50 matched clinical samples ASM46.47,48,49
 
 _"Do they match any of the food or environmental isolates?"_
+
 No
 
 
 _"Are there additional clinical clusters"_
+
 Yes, see above.
 
 
