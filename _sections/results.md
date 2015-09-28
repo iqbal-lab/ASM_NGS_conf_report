@@ -77,7 +77,7 @@ a few exceptions: SRR2352237 looks different from all other samples, but this sa
 ### Mobilome/accessory genome comparison 
 
 
-By working with a joint assembly graph of all samples, we are able very simply to pull out a presence/absence heatmap of contigs across samples. See
+By working with a joint assembly graph of all samples, we are able very simply to pull out a presence/absence heatmap of contigs (we restricted to contigs >500bp)  across samples. See
 
 [Figure 7](#figure-7)
 
