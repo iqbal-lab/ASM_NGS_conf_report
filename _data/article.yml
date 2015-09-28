@@ -1,7 +1,7 @@
 # Note: to avoid repeating the same data multiple times,
 # identifiers (starting with "&") are referenced later (starting with "*")
 
-title: "Outbryk: Pan-genomic epidemiology with Cortex\nReport for \"ASM NGS for genomic epidemiology\" conference"
+title: "Outbryk: Pan-genomic epidemiology with Cortex\n\tReport for \"ASM NGS for genomic epidemiology\" conference"
 date: 2015-09-26T12:00:00Z
 doi: # e.g. 10.1234/example.1
 github: # e.g. user-name/paper-now
