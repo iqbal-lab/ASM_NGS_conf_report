@@ -15,7 +15,6 @@ authors:
   - &RachelNorris
     id: "rachelnorris"
     name: "Rachel Norris"
-    email: "rmnorris@well.ox.ac.uk"
     orcid: ""
   - &HenkdenBakker
     id: "henkdenbakker"
@@ -25,12 +24,10 @@ authors:
   - &PhelimBradley
     id: "phelimbradley"
     name: "Phelim Bradley"
-    email: "phelim.bradley@well.ox.ac.uk"
     orcid: "0000-0003-3967-3037"    
   - &JenniferGardy
     id: "jennifergardy"
     name: "Jennifer Gardy"
-    email: "Jennifer.Gardy@bccdc.ca"
     orcid: ""
 
 
@@ -88,5 +85,5 @@ contributions:
     url: http://dictionary.casrai.org/Contributor_Roles/Writing_%E2%80%93_review_%26_editing
     contributors:
       - *ZaminIqbal
-      -  *HenkdenBakker
+      - *HenkdenBakker
 
